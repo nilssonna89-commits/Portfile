@@ -1,0 +1,18 @@
+﻿@model List<Exercises>
+
+
+
+@{
+    ViewData["Title"] = "Exercises";
+}
+
+<h1>Exercises</h1>
+
+@foreach (Exercises exercise in Model)
+{
+
+    <p>@exercise.Name <a href="/Exercises/Show/@exercise.Id">Show</a></p>
+
+}
+
+<a href="/Exercises/Create">Create New Exercise</a>

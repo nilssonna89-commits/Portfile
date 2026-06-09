@@ -1,0 +1,81 @@
+﻿@using Workout_Diary.Models
+@model List<WorkoutIndexViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Workouts</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+             Name
+            </th>
+            <th>
+            Exercises
+            </th>
+            <th>
+              Description
+            </th>
+            <th>
+                Repetitions
+            </th>
+            <th>
+                Sets
+            </th>
+            <th>
+                KM
+            </th>
+            <th>
+              Date
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any()) // Check if the model is not null and contains any workouts
+        {
+            @foreach (WorkoutIndexViewModel workout in Model)
+            {
+                <tr>
+                    <td>
+                      @workout.WorkoutName
+                    </td>
+                    <td>
+                      @workout.ExerciseName
+                    </td>
+                    <td>
+                        @workout.WorkoutDescription
+                    </td>
+                    <td>
+                        @workout.Repetitions
+                    </td>
+                    <td>
+                        @workout.Sets
+                    </td>
+                    <td>
+                        @workout.Km
+                    </td>
+                    <td>
+                        @workout.WorkoutDate.ToString("yyyy-MM-dd")
+                    </td>
+                    <td>
+                        <a asp-controller="Workouts" asp-action="Edit" asp-route-id="@workout.Id">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@workout.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">No workouts found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

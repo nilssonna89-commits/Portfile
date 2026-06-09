@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Workout Diary</h1>
+    <p>Track your workouts and progress!</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h2>Workouts</h2>
+            <p><a asp-controller="Workouts" asp-action="Index">View Workouts</a></p>
+
+            <img class="round-img" src="~/content/img/GIRL.PNG" alt="Girl" />
+        </div>
+
+        <div class="col-md-6 text-center">
+            <h2>Exercises</h2>
+            <p><a asp-controller="Exercises" asp-action="Index">View Exercises</a></p>
+
+            <img class="round-img" src="~/content/img/boy.jpg" alt="Boy" />
+        </div>
+    </div>
+</div>
