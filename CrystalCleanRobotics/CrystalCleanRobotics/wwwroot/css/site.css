@@ -1,0 +1,251 @@
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+.content {
+    padding: 1rem;
+    margin-bottom: 60px;
+}
+
+
+.page-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(#0b1b3b, #1f4f7b);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+    .page-hero h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .page-hero p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+
+.page-section {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+    .page-section h2 {
+        margin-bottom: 10px;
+        color: #0b1b3b;
+    }
+
+    .page-section p,
+    .page-section ul {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .page-section ul {
+        margin-bottom: 15px;
+    }
+
+
+.team-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .team-section h2 {
+        margin-bottom: 20px;
+        color: #0b1b3b;
+    }
+
+.team-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+    .team-strip .person {
+        width: 150px;
+        background: #f7f9fc;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+        .team-strip .person img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+    .team-strip .role {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #1f4f7b;
+    }
+
+    .team-strip .name {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+.contact-card {
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    background: #f7f9fc;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+    .contact-card h2 {
+        margin-bottom: 10px;
+        color: #0b1b3b;
+    }
+
+    .contact-card p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.robot-card {
+    width: 220px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+    .robot-card img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .robot-card h3 {
+        color: #1f4f7b;
+        margin-bottom: 10px;
+    }
+
+    .robot-card ul {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+.customer-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+    .customer-categories .cat {
+        background: #0b1b3b;
+        color: white;
+        padding: 20px;
+        width: 260px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+.customer-cases {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+    .customer-cases h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .customer-cases .case {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        border-left: 6px solid #1f4f7b;
+    }
+
+.customer-testimonials {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+    .customer-testimonials h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .customer-testimonials .testimonial {
+        background: #e9eef5;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        font-style: italic;
+        border-left: 6px solid #0b1b3b;
+    }
+
+customer-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.customer-card p {
+    margin-bottom: 10px;
+}

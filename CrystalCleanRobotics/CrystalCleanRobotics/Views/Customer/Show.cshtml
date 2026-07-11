@@ -1,0 +1,22 @@
+﻿@model List<Customer>
+
+<section class="page-hero">
+    <h1>Våra nya kunder som vi jobbar med just nu</h1>
+    <p>Här är en lista med dem kunderna som vi fasar in just nu</p>
+   
+</section>
+
+<section class="customer-cases">
+    <div class="case">
+@foreach (Customer customer in Model)
+    {
+        <h2>@customer.Name</h2>
+        <p><a href="/Customer/Shows/@customer.Id">Visa detaljer</a></p>
+    }
+    </div>
+</section>
+   
+    <section class="page-section">
+
+    <a href="/Customer/Create" class="btn btn-primary">Lägg till kund</a>
+</section>
